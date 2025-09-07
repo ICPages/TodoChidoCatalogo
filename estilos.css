@@ -1,0 +1,267 @@
+body {
+  font-family: "Rationale", sans-serif;
+  font-size: 25px;
+  background-color: #FFFFFF;
+  color: #0a0a0a;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background-color: #0a0a0a !important;
+}
+.navbar-brand, .nav-link {
+  color: #39ff14 !important;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover, .nav-link:hover {
+  color: #8a2be2 !important;
+}
+
+.navbar a {
+  font-family: 'Manufacturing Consent', sans-serif;
+  font-size: 20px;
+}
+
+/* ======== HERO ======== */
+.hero {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #39ff14, #0a0a0a, #b0b0b0, #8a2be2, #FFFFFF);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Animación del fondo */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Texto dentro del Hero */
+.hero .container {
+  position: relative;
+  z-index: 2;
+  animation: textColor 12s ease infinite;
+}
+
+/* Animación de color en el texto */
+@keyframes textColor {
+  0% { color: #FFFFFF; }
+  25% { color: #8A2BE2; }
+  50% { color: #B0B0B0; }
+  75% { color: #0A0A0A; }
+  100% { color: #39FF14; }
+}
+
+/* Estilo del h1 con la fuente */
+.hero h1 {
+  font-family: 'Manufacturing Consent', sans-serif;
+  text-shadow: 2px 2px 5px #0A0A0A;
+}
+
+/* Contorno al párrafo para legibilidad */
+.hero p {
+  font-family: "Courgette", cursive;
+  text-shadow: 2px 2px 5px #0A0A0A;
+}
+
+.catalogo h2 {
+  font-family: 'Manufacturing Consent', sans-serif;
+  color: #0A0A0A;
+}
+
+.li {
+  color:#39FF14;
+}
+
+.li:hover {
+  color: #8a2be2;
+}
+
+.tallaSelect, .prendaSelect {
+  color: #0a0a0a;
+  max-width: 120px;
+  margin: 0 auto 10px;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px #0a0a0a;
+  transition: transform .2s;
+}
+.card:hover {
+  box-shadow: 0 4px 10px #39FF14;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-title {
+  color: #0A0A0A;
+  font-family: "Rock Salt", cursive;
+  font-size: 1.1rem;
+}
+.precio {
+  font-family: 'Manufacturing Consent', sans-serif;
+  font-weight: bold;
+  color: #8A2BE2;
+  margin-bottom: 10px;
+}
+
+.btn.addCart {
+  background-color: #0A0A0A;  /* Color verde neón */
+  color: #39ff14;                /* Color del texto, negro para contraste */
+  border: none;               /* Quita bordes por defecto */
+  padding: 10px 20px;         /* Espaciado interno */
+  font-size: 16px;            /* Tamaño de la letra */
+  font-weight: bold;          /* Negrita */
+  cursor: pointer;            /* Mano al pasar el mouse */
+  border-radius: 5px;         /* Bordes redondeados */
+  transition: 0.3s;           /* Animación suave */
+}
+
+.btn.addCart:hover {
+  background-color: #39ff14;  /* Cambia de color al pasar el mouse */
+  color: #0A0A0A;
+}
+
+#carrito {
+  border-top: 2px solid #0A0A0A;
+}
+
+#carrito h2 {
+  font-family: 'Manufacturing Consent', sans-serif;
+  color: #0A0A0A;
+}
+
+#checkoutBtn {
+  background-color: #39FF14;
+  color: #0a0a0a;
+  border: none;
+}
+#checkoutBtn:hover {
+  color: #39FF14;
+  background-color: #8A2BE2;
+}
+
+#clearCartBtn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+}
+#clearCartBtn:hover {
+  background-color: #0a0a0a;
+  color:#ff4d4d;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#subir {
+  font-family: 'Manufacturing Consent', sans-serif;
+  background-color: #8A2BE2;
+  color: #39FF14;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: none;     /* Oculto al inicio */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px #0a0a0a; /* sombreado bonito */
+  transition: all 0.3s ease;
+}
+
+#subir:hover {
+  background-color: #39FF14;
+  color: #8A2BE2;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #0a0a0a;
+  font-size: 20px;
+  color: #39ff14;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ======== LETRERO MARQUEE ======== */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #0a0a0a; /* Fondo oscuro */
+  color: #39ff14;      /* Texto claro */
+  padding: 10px 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Rock Salt", cursive;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;      /* Ajusta el ancho al contenido */
+  animation: marquee 30s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-right: 100px;   /* Espacio entre repeticiones */
+}
+
+/* Animación continua */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ==== CURSOR PERSONALIZADO 👽 ==== */
+body, html {
+  cursor: none; /* ocultamos el cursor original */
+}
+
+#cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;       /* por encima de todo */
+  font-size: 32px;      /* tamaño del emoji */
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* no bloquea clics */
+  user-select: none;
+  transition: transform 0.05s linear;
+}

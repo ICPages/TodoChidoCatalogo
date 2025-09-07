@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Chido - Catálogo</title>
+  <link rel="icon" href="logo.jpg" type="">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="estilos.css">
+      <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Manufacturing+Consent&family=Rationale&family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://icpages.github.io/TodoChido/"><img src="logo.jpg" alt="Logo Todo Chido" width="40" height="40" class="d-inline-block align-text-center">Todo Chido</a>
+      <a class="nav-link" href="#carrito">Carrito</a>
+    </div>
+  </nav>
+
+    <!-- Hero -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <br> <br>
+      <h1 class="display-3 animate-fade">Todo Chido - Exprésate con tu Ropa</h1>
+      <p class="lead animate-slide">
+        Catálogo completo.
+        Diseños exclusivos y de packs; también trabajamos personalización.
+      </p>
+    </div>
+  </header>
+
+                <!-- Letrero animado -->
+  <div class="marquee-container">
+    <div class="marquee">
+      ✈️ Envío gratis a toda la República Mexicana a partir de $999 MXN 👽 Entrega personal en la Ciudad de Puebla 🚗 Envío por DiDi o Uber en la Ciudad de Puebla ✈️ Envío gratis a toda la República Mexicana a partir de $999 MXN 👽 Entrega personal en la Ciudad de Puebla 🚗 Envío por DiDi o Uber en la Ciudad de Puebla
+    </div>
+  </div>
+
+  <!-- Contenedor Catálogo -->
+  <section class="catalogo container mt-5">
+    <h2 class="text-center mb-4">Catálogo Completo</h2>
+
+    <!-- Filtros -->
+    <div class="row mb-4 g-2">
+      <div class="col-md-4">
+        <input type="text" id="searchBar" class="form-control" placeholder="Buscar por diseño...">
+      </div>
+      <div class="col-md-3">
+        <select id="filterPrenda" class="form-select">
+          <option value="">Filtrar por prenda</option>
+          <option value="gorra">Gorra</option>
+          <option value="ropa">Ropa</option>
+          <option value="tote bag">Tote Bag</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <select id="filterGenero" class="form-select">
+          <option value="">Género</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="niña">Niña</option>
+          <option value="niño">Niño</option>
+          <option value="unisex">Unisex</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select id="filterPrecio" class="form-select">
+          <option value="">Precio</option>
+          <option value="1">Menos de $200</option>
+          <option value="2">$200 - $300</option>
+          <option value="3">Más de $300</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Productos -->
+    <div id="productos" class="row g-4">
+<!-- Producto 1 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC1.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz El Azul</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC1.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC1.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC1.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC1.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz El Azul"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 2 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC2.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz Clave Ali</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC2.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC2.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC2.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC2.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz Clave Ali"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 3 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC3.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz El Ángel Azul</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC3.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC3.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC3.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC3.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz El Ángel Azul"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 4 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC4.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Serpiente</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC4.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC4.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC4.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC4.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Serpiente"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 5 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC5.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Verde Neón</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC5.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC5.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC5.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC5.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Verde Neón"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 6 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC6.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Recorte</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC6.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC6.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC6.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC6.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Recorte"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 7 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC7.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC7.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC7.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC7.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC7.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 8 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC8.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Pasamontañas</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC8.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC8.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC8.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC8.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Pasamontañas"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 9 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC9.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz Miles de Rosas</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC9.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC9.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC9.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC9.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz Miles de Rosas"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 10 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC10.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz II</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC10.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC10.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC10.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC10.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz II"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 11 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-1.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Todo Chido</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-1.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Todo Chido"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 12 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-2.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Amor Tumbado</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-2.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Amor Tumbado"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 13 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-3.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Astronaut</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-3.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Astronaut"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 14 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-4.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Chrome Hearts</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-4.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Chrome Hearts"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 15 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-5.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">West Coast Choppers</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-5.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="West Coast Choppers"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 16 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-6.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">AMIRI Colores</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-6.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="AMIRI Colores"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 17 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="hombre" data-precio="149">
+  <div class="card h-100">
+    <img src="G-7.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Blessed Boy</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-7.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Blessed Boy"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 18 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="unisex" data-precio="149">
+  <div class="card h-100">
+    <img src="G-8.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">AMIRI LA CA</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-8.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="AMIRI LA CA"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 19 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="mujer" data-precio="149">
+  <div class="card h-100">
+    <img src="G-9.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">The Powerpuff Girls</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-9.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="The Powerpuff Girls"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 20 -->
+<div class="col-md-4 producto" data-prenda="gorra" data-genero="mujer" data-precio="149">
+  <div class="card h-100">
+    <img src="G-10.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">Hello Kitty</h3>
+      <h4 class="precio">$149</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Gorra" data-precio="149" data-imagen="G-10.png">Gorra</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="Unitalla">Unitalla</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="Hello Kitty"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen=""> Agregar al carrito</button></div></div></div>
+<!-- Producto 21 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC11.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz III</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC11.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC11.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC11.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC11.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz III"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 22 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC12.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz IV</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC12.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC12.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC12.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC12.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz IV"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 23 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC13.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Rosa</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC13.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC13.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC13.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC13.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Rosa"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 24 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC14.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Flores Oscuro</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC14.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC14.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC14.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC14.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Flores Oscuro"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 25 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC15.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Dorado & Rosa</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC15.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC15.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC15.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC15.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Dorado & Rosa"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 26 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC16.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Flores Claro</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC16.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC16.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC16.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC16.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Flores Claro"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 27 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC17.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Mariposa</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC17.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC17.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC17.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC17.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Flores Mariposa"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 28 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC18.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Rayado Rosa</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC18.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC18.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC18.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC18.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Rayado Rosa"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 29 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC19.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Geométrico</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC19.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC19.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC19.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC19.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Geométrico"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 30 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC20.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Azul Brillante</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC20.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC20.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC20.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC20.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Azul Brillante"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 31 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC21.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x $ad Boyz Fin de Semana</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC21.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC21.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC21.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC21.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x $ad Boyz Fin de Semana"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 32 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="mujer" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC22.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x Hello Kitty</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC22.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC22.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC22.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC22.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x Hello Kitty"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 33 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC23.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x CT</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC23.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC23.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC23.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC23.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x CT"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 34 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC24.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Relámpago Azul</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC24.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC24.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC24.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC24.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Relámpago Azul"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 35 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC25.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Rayos Violeta</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC25.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC25.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC25.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC25.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Rayos Violeta"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 36 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC26.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Azul Neón</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC26.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC26.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC26.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC26.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Azul Neón"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 37 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC27.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC Rayos Amarillo</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC27.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC27.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC27.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC27.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC Rayos Amarillo"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 38 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC28.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC x Play</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC28.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC28.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC28.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC28.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC x Play"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+<!-- Producto 39 -->
+<div class="col-md-4 producto" data-prenda="ropa" data-genero="unisex" data-precio="249">
+  <div class="card h-100">
+    <img src="P-ASSC29.png" class="card-img-top producto-img" alt="">
+    <div class="card-body text-center">
+      <h3 class="card-title">ASSC RoM</h3>
+      <h4 class="precio">$249</h4>
+      <!-- Selector de prenda -->
+      <select class="form-select mb-2 prendaSelect">
+        <option value="" disabled selected>Prenda</option>
+        <option value="Playera" data-precio="249" data-imagen="P-ASSC29.png">Playera</option>
+        <option value="Over Size" data-precio="279" data-imagen="OS-ASSC29.png">Over Size</option>
+        <option value="Mineral Wash" data-precio="299" data-imagen="MW-ASSC29.png">Mineral Wash</option>
+        <option value="Hoodie" data-precio="469" data-imagen="H-ASSC29.png">Hoodie</option>
+      </select>
+      <!-- Selector de talla -->
+      <select class="form-select mb-2 tallaSelect">
+        <option value="" disabled selected>Talla</option>
+        <option value="CH">CH</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+        <option value="EG">EG</option>
+      </select>
+      <button class="btn btn-dark addCart"
+              data-nombre="ASSC RoM"
+              data-uniprenda="false" data-precio="false" data-unitalla="false"
+              data-imagen="false"> Agregar al carrito</button></div></div></div>
+
+    </div>
+  </section>
+
+<h1></h1>
+
+<!-- Carrito -->
+<section id="carrito" class="container py-5">
+  <h2 class="mb-3">Carrito</h2>
+  <ul id="cartItems" class="list-group mb-3"></ul>
+  <p><strong>Total prendas:</strong> <span id="cartCount">0</span></p>
+  <p><strong>Total a pagar:</strong> $<span id="cartTotal">0</span></p>
+
+  <!-- Datos comprador -->
+  <div class="mb-3">
+    <input type="text" id="nombreComprador" class="form-control mb-2" placeholder="Tu nombre">
+    <input type="email" id="correoComprador" class="form-control mb-2" placeholder="Tu correo">
+
+    <!-- Método de pago -->
+    <select id="metodoPago" class="form-control">
+      <option value="">Selecciona método de pago</option>
+      <option value="Mercado Pago">Mercado Pago</option>
+      <option value="Transferencia">Transferencia</option>
+    </select>
+  </div>
+
+  <div class="d-flex gap-2">
+    <button id="checkoutBtn" class="btn btn-success">Ir a pagar por WhatsApp</button>
+    <button id="clearCartBtn" class="btn btn-danger">Vaciar carrito</button>
+  </div>
+</section>
+
+<!-- Botón flotante -->
+  <button id="subir">Subir</button> <br> <br>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+  <footer class="text-center py-3">
+    <p class="mb-0">&copy; 2025 Todo Chido. Todos los derechos reservados. Página desarrollada por IC Pages.</p>
+  </footer>
+
+  <!-- Cursor 👽 -->
+  <div id="cursor">👽</div>
+
+<script src="catalogo.js"></script>
+<script src="cursor.js"></script>
+
+</body>
+</html>

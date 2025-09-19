@@ -270,21 +270,23 @@ footer {
   100% { transform: translateX(-50%); }
 }
 
-/* ==== CURSOR PERSONALIZADO ==== */
-body, html {
-  cursor: none;
-}
+/* ==== CURSOR PERSONALIZADO SOLO EN DESKTOP ==== */
+@media (min-width: 768px) {
+  body, html {
+    cursor: none;
+  }
 
-#cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 99999;
-  font-size: 32px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  user-select: none;
-  transition: transform 0.05s linear;
+  #cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    font-size: 32px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    user-select: none;
+    transition: transform 0.05s linear;
+  }
 }
 
 /* ======== PAGINACIÓN ======== */
